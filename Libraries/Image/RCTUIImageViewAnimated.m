@@ -276,6 +276,9 @@ static NSUInteger RCTDeviceFreeMemory() {
     layer.contentsScale = self.animatedImageScale;
     layer.contents = (__bridge id)_currentFrame.CGImage;
   }
+  
+  // lets fix this!!!
+  [super displayLayer:layer];
 }
 
 #pragma mark - Util
